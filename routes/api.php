@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ApiControllers\ApiCountryController;
+use App\Http\Controllers\ApiControllers\ApiCustomersController;
+use App\Http\Controllers\ApiControllers\ApiTownController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::resource('/country', ApiCountryController::class);
+Route::resource('/town', ApiTownController::class);
+Route::resource('/customers', ApiCustomersController::class);
