@@ -1,0 +1,14 @@
+body{
+    background-color: #e9f3fd;
+    font-family: "Open Sans";
+}
+.navbarBg{
+    background-color: white;
+    padding-left: 4.5%;
+    color: #1470ff;
+    box-shadow:0px 15px 30px #8a959e33;
+}
+.Logo{
+    padding-top: 5px;
+    width: 90%;
+}
